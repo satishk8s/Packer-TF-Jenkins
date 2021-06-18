@@ -16,12 +16,12 @@
       "secret_key": "{{user `aws_secret_key`}}",
       "type": "amazon-ebs",
       "region": "{{user `region`}}",
-      "source_ami": "{{user `source_ami`}}",
-      "instance_type": "{{user `instance_type`}}",
+      "source_ami": "ami-0747bdcabd34c712a",
+      "instance_type": "t2.micro",
       "ssh_username": "ubuntu",
       "ami_name": "Satishk8s-{{isotime | clean_resource_name}}",
-      "vpc_id": "{{user `vpc_id`}}",
-      "subnet_id": "{{user `subnet_id`}}",
+      "vpc_id": "vpc-08c4651abb001186f",
+      "subnet_id": "subnet-02e7ac2d9fcfb2a5b",
        "associate_public_ip_address": "true",
       "tags": {
         "Name": "Satishk8s-{{isotime | clean_resource_name}}"
