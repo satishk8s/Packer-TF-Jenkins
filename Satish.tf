@@ -122,9 +122,9 @@ resource "aws_instance" "web-1" {
     }
 }
 
-#output "ami_id" {
- value = "${data.aws_ami.my_ami.id}"
-}
+# #output "ami_id" {
+#  value = "${data.aws_ami.my_ami.id}"
+# }
 # !/bin/bash
 # echo "Listing the files in the repo."
 # ls -al
