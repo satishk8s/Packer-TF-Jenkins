@@ -22,6 +22,7 @@
       "ami_name": "Satishk8s-{{isotime | clean_resource_name}}",
       "vpc_id": "{{user `vpc_id`}}",
       "subnet_id": "{{user `subnet_id`}}",
+       "associate_public_ip_address": "true",
       "tags": {
         "Name": "Satishk8s-{{isotime | clean_resource_name}}"
       }
